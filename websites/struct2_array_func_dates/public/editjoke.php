@@ -7,7 +7,7 @@ try {
         updateJoke($pdo, [
             'id' => $_POST['jokeid'],
             'joketext' => $_POST['joketext'],
-            'authorId' => 1
+            'authorid' => 1
         ]);
 
         header('location: jokes.php');
