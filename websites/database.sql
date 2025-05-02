@@ -151,7 +151,7 @@ CREATE TABLE `joke` (
 
 LOCK TABLES `joke` WRITE;
 /*!40000 ALTER TABLE `joke` DISABLE KEYS */;
-INSERT INTO `joke` VALUES (1,'How many programmers does it take to screw in a lightbulb? None, it\'s a hardware problem.','2021-04-01',1),(2,'Why did the programmer quit his job? He didn\'t get arrays','2021-04-01',1),(3,'Why was the empty array stuck outside? It didn\'t have any keys','2021-04-01',2),(4,'How many lawyers like programming?','2021-04-01',2),(5,'Knock Knock!','2021-05-01',1),(6,'Your are a newbie to programming? Start learning C++!','2025-04-30',1);
+INSERT INTO `joke` VALUES (1,'How many programmers does it take to screw in a lightbulb? None, it\'s a hardware problem.','2021-04-01',1),(2,'Why did the programmer quit his job? He didn\'t get arrays','2021-04-01',1),(3,'Why was the empty array stuck outside? It didn\'t have any keys','2021-04-01',2),(5,'Knock Knock!','2021-05-01',1),(6,'Your are a newbie to programming? Start learning C++!','2025-04-30',1);
 /*!40000 ALTER TABLE `joke` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -178,7 +178,7 @@ CREATE TABLE `jokecategory` (
 
 LOCK TABLES `jokecategory` WRITE;
 /*!40000 ALTER TABLE `jokecategory` DISABLE KEYS */;
-INSERT INTO `jokecategory` VALUES (5,1),(4,2),(2,3),(1,4);
+INSERT INTO `jokecategory` VALUES (5,1),(2,3),(1,4);
 /*!40000 ALTER TABLE `jokecategory` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -195,4 +195,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-30 15:57:29
+-- Dump completed on 2025-05-02  7:58:05
