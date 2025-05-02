@@ -20,8 +20,8 @@ function getJoke($pdo, $id) {
 }
 
 function insertJoke($pdo, $joketext, $authorId) {
-  $stmt = $pdo->prepare('INSERT INTO `joke` (`joketext`, `jokedate`, `authorId`)
-      VALUES (:joketext, :jokedate, :authorId)');
+  $stmt = $pdo->prepare('INSERT INTO `joke` (`joketext`, `jokedate`, `authorid`)
+      VALUES (:joketext, :jokedate, :authorid)');
 
   $values = [
     ':joketext' => $joketext, 
