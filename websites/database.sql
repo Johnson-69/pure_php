@@ -142,7 +142,7 @@ CREATE TABLE `joke` (
   `jokedate` date NOT NULL,
   `authorid` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE `joke` (
 
 LOCK TABLES `joke` WRITE;
 /*!40000 ALTER TABLE `joke` DISABLE KEYS */;
-INSERT INTO `joke` VALUES (1,'How many programmers does it take to screw in a lightbulb? None, it\'s a hardware problem.','2021-04-01',1),(2,'Why did the programmer quit his job? He didn\'t get arrays','2021-04-01',1),(5,'Knock Knock Knock!','2021-05-01',1),(6,'Your are a newbie to programming? Start learning C++!','2025-04-30',1),(7,'I speak two languages: PHP and Javascript :)','2025-05-02',1),(28,'I drink Java!','2025-05-02',2);
+INSERT INTO `joke` VALUES (1,'How many programmers does it take to screw in a lightbulb? None, it\'s a hardware problem.','2021-04-01',1),(2,'Why did the programmer quit his job? He didn\'t get arrays','2021-04-01',1),(5,'Knock Knock!','2025-05-04',1),(6,'Your are a newbie to programming? Start learning C++!','2025-04-30',1),(7,'I speak two languages: PHP and Javascript :)','2025-05-02',1),(28,'I drink Java!','2025-05-02',2);
 /*!40000 ALTER TABLE `joke` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -195,4 +195,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-03  9:45:43
+-- Dump completed on 2025-05-04 16:45:36
