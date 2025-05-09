@@ -29,7 +29,7 @@ class JokeController {
 
 	    $jokes = [];
 	    foreach ($result as $joke) {
-	        $author = $this->authorsTable->find('id', $joke['authorId'])[0];
+	        $author = $this->authorsTable->find('id', $joke['authorid'])[0];
 
 	        $jokes[] = [
 	            'id' => $joke['id'],
@@ -60,7 +60,7 @@ class JokeController {
 
 	        $joke = $_POST['joke'];
 	        $joke['jokedate'] = new DateTime();
-	        $joke['authorId'] = 1;
+	        $joke['authorid'] = 1;
 
 	        $this->jokesTable->save($joke);
 

@@ -3,6 +3,22 @@ class EntryPoint {
     public function __construct(private $website) {
     }
 
+    private function loadTemplate($templateFileName, $variables) {
+        extract($variables);
+
+        ob_start();
+        include  __DIR__ . '/../templates/' . $templateFileName;
+
+        return ob_get_clean();
+    }
+
+    private function checkUri($uri) {
+        if ($uri != strtolower($uri)) {
+            http_response_code(301);
+            header('location: ' . strtolower($uri));
+        }
+    }
+
     public function run($uri) {
         try {
             $this->checkUri($uri);
@@ -33,21 +49,5 @@ class EntryPoint {
         }
 
         include  __DIR__ . '/../templates/layout.html.php';
-    }
-
-    private function loadTemplate($templateFileName, $variables) {
-        extract($variables);
-
-        ob_start();
-        include  __DIR__ . '/../templates/' . $templateFileName;
-
-        return ob_get_clean();
-    }
-
-    private function checkUri($uri) {
-        if ($uri != strtolower($uri)) {
-            http_response_code(301);
-            header('location: ' . strtolower($uri));
-        }
-    }
+    } 
 }
