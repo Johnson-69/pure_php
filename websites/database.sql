@@ -151,7 +151,7 @@ CREATE TABLE `joke` (
 
 LOCK TABLES `joke` WRITE;
 /*!40000 ALTER TABLE `joke` DISABLE KEYS */;
-INSERT INTO `joke` VALUES (1,'How many programmers does it take to screw in a lightbulb? None, it\'s a hardware problem.','2021-04-01',1),(2,'Why did the programmer quit his job? He didn\'t get arrays','2021-04-01',1),(6,'Your are a newbie to programming? Start learning C++!','2025-04-30',1),(7,'I speak two languages: PHP and Javascript :)','2025-05-02',1),(28,'I drink Java!','2025-05-02',2),(30,'My gf adores coding!','2025-05-08',1);
+INSERT INTO `joke` VALUES (1,'How many programmers does it take to screw in a lightbulb? None, it\'s a hardware problem.','2021-04-01',1),(2,'Why did the programmer quit his job? He didn\'t get arrays','2021-04-01',1),(6,'Your are a newbie to programming? Start learning C++!','2025-04-30',1),(7,'I speak two languages: PHP and Javascript :)','2025-05-02',1),(28,'I drink Java!','2025-05-02',2),(30,'My gf is crazy about coding!','2025-05-08',1);
 /*!40000 ALTER TABLE `joke` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -195,4 +195,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-08 13:49:09
+-- Dump completed on 2025-05-08 17:47:25
