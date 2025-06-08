@@ -1,3 +1,4 @@
+version: '3.8'
 services:
     updatecerts:
         image: vjedev/certupdater:latest
@@ -32,15 +33,13 @@ services:
         volumes:
             - ./websites:/websites
     mysql:
-        image: mariadb:11.7.2-noble 
+        image: mariadb:11.8.1-noble-rc
         environment:
             MYSQL_ROOT_PASSWORD: 'v.je'
             MYSQL_USER: 'v.je'
             MYSQL_PASSWORD: 'v.je'
         volumes:
             - mysqldata:/var/lib/mysql
-            - certs:/ssl
-            - mysqlconf:/etc/mysql/conf.d/
         ports:
             - 3306:3306
     phpunit:
@@ -65,7 +64,7 @@ services:
             - composer
     maildev:
         image: maildev/maildev:latest
-    
+
     phpmyadmin:
         image: phpmyadmin:5.2.2-apache
         environment:
@@ -73,7 +72,7 @@ services:
             PMA_USER: v.je
             PMA_PASSWORD: v.je
         ports:
-            - 8080:80
+            - 8000:80
         depends_on:
             - mysql
 

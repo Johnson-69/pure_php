@@ -2,7 +2,7 @@
 --
 -- Host: mysql    Database: test_db
 -- ------------------------------------------------------
--- Server version	11.7.2-MariaDB-ubu2404
+-- Server version	11.8.1-MariaDB-ubu2404
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -91,8 +91,9 @@ CREATE TABLE `author` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_uca1400_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,7 +102,7 @@ CREATE TABLE `author` (
 
 LOCK TABLES `author` WRITE;
 /*!40000 ALTER TABLE `author` DISABLE KEYS */;
-INSERT INTO `author` VALUES (1,'Kevin Yank','thatguy@kevinyank.com'),(2,'John','john.neo@gmail.com');
+INSERT INTO `author` VALUES (1,'Kevin Yank','thatguy@kevinyank.com',''),(2,'John','john.neo@gmail.com',''),(3,'Johnson Fame','johnsonsoenyunt@gmail.com','$2y$12$NULe.aS9Imy3msXDXMMIVukYQfjNf/0IH9jW83doxCdw9JxQ4jlSS');
 /*!40000 ALTER TABLE `author` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -195,4 +196,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-10 10:31:52
+-- Dump completed on 2025-06-08 16:28:34
